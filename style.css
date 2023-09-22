@@ -3,9 +3,11 @@
     width: 20%;
     height: auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .pixel {
-    border: 2px rebeccapurple solid;
+    border: 1px rebeccapurple solid;
+    width: inherit;
+    aspect-ratio: auto 1 / 1;
 }
