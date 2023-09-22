@@ -1,3 +1,5 @@
 .pixel {
     border: 2px rebeccapurple solid;
+    min-width: 100px;
+    min-height: 100px;
 }
