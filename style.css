@@ -9,6 +9,6 @@
 
 .pixel {
     border: 1px rebeccapurple solid;
-    width: inherit;
+    width: 40px;
     aspect-ratio: auto 1 / 1;
 }
