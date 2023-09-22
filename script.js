@@ -1,6 +1,13 @@
 const container = document.getElementById('container');
 
-for (var i = 0; i < 16; i++)
+const sizeSlider = document.getElementById('sizeSlider');
+
+console.log(sizeSlider.valueAsNumber);
+
+function canvasSize(size)
 {
-    container.innerHTML += `<div class="pixel" id="pixel_${i}"></div>`;
+    for (var i = 0; i < size; i++)
+    {
+        container.innerHTML += `<div class="pixel" id="pixel_${i}"></div>`;
+    }
 }
