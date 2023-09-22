@@ -1,3 +1,17 @@
+#sizeWidget {
+    width: 160px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: inherit;
+}
+
 #container {
     display: flex;
     margin: auto;
