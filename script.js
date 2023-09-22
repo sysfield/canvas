@@ -1,8 +1,6 @@
 const container = document.getElementById('container');
 
-const pixel = document.createElement('div');
-
-for (var i = 0; i < 16; i++)
+for (var i = 0; i < 15; i++)
 {
-    container.appendChild(pixel);
+    container.innerHTML += `<div id="pixel_${i}"></div>`;
 }
