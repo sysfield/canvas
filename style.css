@@ -15,14 +15,17 @@ datalist {
 #container {
     display: flex;
     margin: auto;
-    width: 20%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: flex-start;
 }
 
 .pixel {
     border: 1px rebeccapurple solid;
-    width: 40px;
+    flex: 1;
+    width: 20%;
+    height: 20%;
+    margin: auto;
     aspect-ratio: auto 1 / 1;
 }
