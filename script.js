@@ -2,6 +2,17 @@ const container = document.getElementById('container');
 
 const sizeSlider = document.getElementById('sizeSlider');
 
+var mouseDown = 0;
+document.getElementById('container').onmousedown = function() {
+    ++mouseDown;
+    console.log(mouseDown);
+}
+
+document.getElementById('container').onmouseup = function() {
+    --mouseDown;
+    console.log(mouseDown);
+}
+
 // console.log(sizeSlider.valueAsNumber);
 
 sizeSlider.addEventListener('mouseup', canvasSize(sizeSlider.valueAsNumber))
@@ -30,6 +41,15 @@ function canvasSize(size)
 
     for (var i = 0; i < size; i++)
     {
-        container.innerHTML += `<div class="pixel" id="pixel_${i}"></div>`;
+        let pixelID = `pixel_${i}`;
+        container.innerHTML += `<div class="pixel" onmouseover="colourPixel(${pixelID})" id="${pixelID}"></div>`;
+    }
+}
+
+function colourPixel(pixelID)
+{
+    if (mouseDown)
+    {
+        pixelID.style.backgroundColor = 'rebeccapurple';
     }
 }
